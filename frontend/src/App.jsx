@@ -8,7 +8,7 @@ function App() {
   const [popularPosts, setPopularPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [activeTab, setActiveTab] = useState("users"); // Default tab: users
+  const [activeTab, setActiveTab] = useState("users"); 
 
   useEffect(() => {
     const fetchData = async () => {
