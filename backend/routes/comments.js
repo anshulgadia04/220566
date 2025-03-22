@@ -14,7 +14,7 @@ router.get("/:postId", async (req, res) => {
         const token = await getAuthToken();
         const postId = req.params.postId;
 
-        const response = await axios.get(`${COMMENTS_URL}/${postId}`, {
+        const response = await axios.get(`${COMMENTS_URL}/${postId}/comments`, {
             headers: { Authorization: `Bearer ${token}` }
         });
 
